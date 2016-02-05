@@ -9,11 +9,15 @@
             background-color: #ffbb42;
         }
         header{
-            border:1px solid black;
-            margin:5% 5%;
+            border:1px solid blue;
+            margin:2% 5%;
+            clear:left;
         }
-        nav a{
-            float:right;
+        .logo{
+            float: left;
+        }
+
+        li a{
             margin-left: 5%;
             text-decoration: none;
             color:#ff3800;
@@ -22,11 +26,22 @@
             line-height: 2em;
             font-weight: 800;
         }
-        nav a:hover{
+
+        li a:hover{
             color: white;
         }
-        nav{
+
+        ul{
+            float: right;
+            margin:  0;
+            padding: 0;
+            width: 40%;
+            border:1px solid green;
+        }
+
+        li{
             display: inline;
+            list-style-type: none;
         }
         main{
             text-align: center;
@@ -51,25 +66,29 @@
             margin-top: 3%;
             width: 100%;
         }
+
         .downarrow{
-            margin-top: 3%;
+            margin-top: 7%;
         }
+
+
     </style>
 </head>
 <body>
     <header>
-        <img class="logo" src="true_icon.png"/>
-        <nav>
-            <a href="/">WORK</a>
-            <a href="/">US</a>
-            <a href="/">THINKING</a>
-            <a href="/">CONTACT</a>
-        </nav>
+            <img src="true_icon.png"/>
+            <ul>
+                <li><a href="/">WORK</a></li>
+                <li><a href="/">US</a></li>
+                <li><a href="/">THINKING</a></li>
+                <li><a href="/">CONTACT</a></li>
+            </ul>
+
+
     </header>
     <main>
         <span class="content">Let's make something</span><span class="content"> extraordinary</span>
         <div class="container">
-            <div><button>SET US A CHALLENGE!</button></div>
             <div><button>SET US A CHALLENGE!</button></div>
         </div>
         <img class="downarrow" src="downarrow.png"/>
